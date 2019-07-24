@@ -7,7 +7,8 @@ public class MovingRectangle {
 	//initializing private variables for rectangles
 	private double xCoord, yCoord;
 	private double width, height;
-	private double xv, yv; //x velocity & y velocity
+	// x velocity & y velocity
+	private double xv, yv;
 	private Color randomColor;
 	private boolean isFrozen;
 	private int remainingClicks;
@@ -23,8 +24,10 @@ public class MovingRectangle {
 		this.xv = xv;
 		this.yv = yv;
 		this.isFrozen = false;
-		this.width = width; //to account for halfWidth in StdDraw
-		this.height = height; //to account for halfHeight in StdDraw
+		// to account for halfWidth in StdDraw
+		this.width = width; 
+		// to account for halfHeight in StdDraw
+		this.height = height;
 		this.remainingClicks = remainingClicks;
 	}
 

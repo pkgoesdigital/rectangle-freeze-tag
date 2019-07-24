@@ -95,12 +95,12 @@ public class MovingRectangleDriver {
 						}
 					}
 				}
-				//uncomment for prismacolor rectangles !
-//								rectangles[j].randomColor();
+				// uncomment for prismacolor rectangles !
+				// rectangles[j].randomColor();
 				rectangles[j].animate();
 				rectangles[j].draw();
 
-				//printing out win message when all rectangles are frozen by checking if frozenRectangleCount value is equivalent to length of array
+				// printing out win message when all rectangles are frozen by checking if frozenRectangleCount value is equivalent to length of array
 				if (frozenRectangleCount >= rectangles.length) 
 				{
 					StdDraw.setPenColor(StdDraw.BLACK);
@@ -109,9 +109,9 @@ public class MovingRectangleDriver {
 					StdDraw.text(50, 50, "You Win!");
 				}
 			}
-			//uncomment to show frozenRectangleCount on StdDraw canvas at all times
-			//			StdDraw.setPenColor(StdDraw.BLACK);
-			//			StdDraw.text(20, 10, frozenRectangleCount + "");
+			// uncomment to show frozenRectangleCount on StdDraw canvas at all times
+			// StdDraw.setPenColor(StdDraw.BLACK);
+			// StdDraw.text(20, 10, frozenRectangleCount + "");
 			//StdDraw.show mirrors backbuffer enabled from StdDraw.enableDoubleBuffering()
 			StdDraw.show();
 			StdDraw.pause(20);
